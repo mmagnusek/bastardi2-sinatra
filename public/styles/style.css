@@ -25,6 +25,10 @@ a {
   top: 100px;
   width: 1200px;
 }
+.clear{
+  width: 100%;
+  clear: both;
+}
 .error{
   color: red;
 }
@@ -207,6 +211,9 @@ table thead td{
   width: 225px;
   height: 155px;
   margin-right: 5px;
+}
+#image_gallery .photo.tall{
+  width: 110px;
 }
 #image_gallery .photo img{
   margin-top: 2px;
