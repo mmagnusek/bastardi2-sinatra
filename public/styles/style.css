@@ -247,11 +247,8 @@ table thead td{
 a.partner{
  margin: 0px 2px; 
 }
-a.partner #diakonie{
-  margin: -10px 0px -15px 0px;
-}
-a.partner #mary_kay{
-  margin-top: 5px;
+.logo{
+  float: left;
 }
 h2.partner_section{
   clear: both;
