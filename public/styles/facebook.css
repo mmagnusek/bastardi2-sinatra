@@ -1,0 +1,40 @@
+@import "reset.css";
+
+body{
+  text-align: center;
+  width: 520px;
+  margin: 0 auto;
+  font-family: Helvetica,Arial, sans-serif;
+}
+h2{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+h2,h3{
+  color: red;
+  text-shadow: black 1px 2px 2px;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+}
+.spot{
+  width: 100%;
+  clear: both;
+  margin: 5px 0px;
+  height: 140px;
+  border-bottom: 1px solid grey;
+}
+.video{
+  width: 220px;
+}
+.video.left{
+  float: left;
+  margin-right: 20px;
+}
+.video.right{
+  float: right;
+  margin-left: 20px;
+}
+.spot p{
+  text-align: justify;
+}
