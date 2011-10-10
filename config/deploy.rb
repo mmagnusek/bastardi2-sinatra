@@ -36,7 +36,7 @@ namespace :deploy do
 
  desc "Symlink shared assets on each release."
  task :symlink_shared do
-   # run "ln -nfs #{deploy_to}/shared/production.db #{release_path}/production.db"
+   run "ln -nfs #{deploy_to}/shared/production.db #{release_path}/production.db"
  end
 
  task :install_bundle do
