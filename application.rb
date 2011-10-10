@@ -78,3 +78,5 @@ end
 get '/eshop.html' do
   haml :eshop, :layout => @layout
 end
+
+require 'soutez'
