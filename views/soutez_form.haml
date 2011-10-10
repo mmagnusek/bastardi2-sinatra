@@ -30,44 +30,45 @@
   %br
   %h3 Soutěžní otázky
   .question
-    %h4 1. Jak se jmenuje slavná herečka, známá například z filmu s tebou mě baví svět, jež ve filmu hraje učitelku, kterou žáci nejvíce deptají.
+    %h4 1. Jak se jmenuje herec, který ve druhém dílu Bastardů ztvárnil detektiva Karase?
     %ul{:class => "#{'error' if @answer.errors.has_key?(:question1)}"}
       %li
         %input{:type => 'radio', :id => 'answer_question1a', :name => 'answer[question1]', :value => 'a', :checked => checked?('a', @answer.question1)}
-        %label{:for => 'answer_question1a'} a) Eva Čížkovská
+        %label{:for => 'answer_question1a'} a) Bronislav Poloczek
       %li
         %input{:type => 'radio', :id => 'answer_question1b', :name => 'answer[question1]', :value => 'b', :checked => checked?('b',@answer.question1)}
-        %label{:for => 'answer_question1b'} b) Jana Šulcová
+        %label{:for => 'answer_question1b'} b) Martin Dejdar
       %li
         %input{:type => 'radio', :id => 'answer_question1c', :name => 'answer[question1]', :value => 'c', :checked => checked?('c',@answer.question1)}
-        %label{:for => 'answer_question1c'} c) Blanka Bohdanová
+        %label{:for => 'answer_question1c'} c) Jiří Krampol
   .question
-    %h4 2. Která z hereček z filmu Bastardi oslavila letos 80. narozeniny?
+    %h4 2. Jakou funkci ve škole v druhém díle Bastardů zastává Tomáš Magnusek?
     %ul{:class => "#{'error' if @answer.errors.has_key?(:question2)}"}
       %li
         %input{:type => 'radio', :id => 'answer_question2a', :name => 'answer[question2]', :value => 'a', :checked => checked?('a',@answer.question2)}
-        %label{:for => 'answer_question2a'} a) Blanka Bohdanová
+        %label{:for => 'answer_question2a'} a) Školník
       %li
         %input{:type => 'radio', :id => 'answer_question2b', :name => 'answer[question2]', :value => 'b', :checked => checked?('b',@answer.question2)}
-        %label{:for => 'answer_question2b'} b) Valentina Thielová
+        %label{:for => 'answer_question2b'} b) Kuchař
       %li
         %input{:type => 'radio', :id => 'answer_question2c', :name => 'answer[question2]', :value => 'c', :checked => checked?('c',@answer.question2)}
-        %label{:for => 'answer_question2c'} c) Jaroslava Hanušová
+        %label{:for => 'answer_question2c'} c) Ředitel
   .question
-    %h4 3. Ve filmu Bastardi zazní  i skladby známého slovenského rapera. O koho jde?
+    %h4 3. V druhém pokračování hraje herec známý z pořadu "Nikdo není dokonalý". Jaké je jeho jméno?
     %ul{:class => "#{'error' if @answer.errors.has_key?(:question3)}"}
       %li
         %input{:type => 'radio', :id => 'answer_question3a', :name => 'answer[question3]', :value => 'a', :checked => checked?('a',@answer.question3)}
-        %label{:for => 'answer_question3a'} a) Orion
+        %label{:for => 'answer_question3a'} a) Chuck Norris
       %li
         %input{:type => 'radio', :id => 'answer_question3b', :name => 'answer[question3]', :value => 'b', :checked => checked?('b',@answer.question3)}
-        %label{:for => 'answer_question3b'} b) Wich
+        %label{:for => 'answer_question3b'} b) Karel Šíp
       %li
         %input{:type => 'radio', :id => 'answer_question3c', :name => 'answer[question3]', :value => 'c', :checked => checked?('c',@answer.question3)}
-        %label{:for => 'answer_question3c'} c) Rytmus
+        %label{:for => 'answer_question3c'} c) Petr Novotný
+      %li
+        %input{:type => 'radio', :id => 'answer_question3d', :name => 'answer[question3]', :value => 'd', :checked => checked?('d',@answer.question3)}
+        %label{:for => 'answer_question3d'} d) Jiří Krampol
   %label &nbsp;
   %input{:type => 'submit', :id => 'submit', :value => 'Hlasovat'}
-  
-%a.smaller{:id => 'soutez_vysledky_link', :href => '/soutez_vysledky.html'} Výsledky rychlé facebook soutěže ze 22.9.
-%br
+
 %a.smaller{:id => 'aktuality_link', :href => '/aktuality.html'} Sledujte aktuality, soutěže a zákulisní informace filmu Bastardi na facebook
