@@ -79,4 +79,8 @@ get '/eshop.html' do
   haml :eshop, :layout => @layout
 end
 
-require 'souteze'
+get '/soutez.html' do
+  haml :soutez_vysledky, :layout => @layout
+end
+
+# require 'souteze'
