@@ -72,7 +72,7 @@ function checkAnchor(){
 		  query = currentAnchor.substring(1);
 
       $.ajax({
-        url: '/' + query + '.html',
+        url: '/' + query + '.html?v=2',
         success: function(data) {
           changePageTitle(query);
           $(this).parent().addClass('back');
