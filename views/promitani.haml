@@ -14,17 +14,17 @@
     });
   });
 .projections
-  %h2= "Promítání filmu dnes: #{Date.today}"
+  %h2= "Promítání filmu dnes: #{Date.today.strftime('%d.%m.%Y')}"
   %ul
-    - @today_projections.each do |projection|
+    - Projection.today.order(:location).each do |projection|
       %li= projection.location
     
 .projections
-  %h2= "Promítání filmu zítra: #{Date.today + 1.day}"
+  %h2= "Promítání filmu zítra: #{(Date.today + 1.day).strftime('%d.%m.%Y')}"
   %ul.projections
-    - @tomorrow_projections.each do |projection|
+    - Projection.tomorrow.order(:location).each do |projection|
       %li= projection.location
-      
+.clear
 %h2 Vyberte kino
 %select{:id => "cinema_select"}
   - @cinemas.each do |cinema|

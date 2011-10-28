@@ -168,7 +168,7 @@ table thead td{
 }
 #music{
   position: absolute;
-  margin: -30px 0 0 900px;
+  margin: -27px 0 0 915px;
   width: 49px;
 }
 #trailer{
@@ -299,7 +299,10 @@ table.winners{
 }
 .projections ul{
   margin-top: 10px;
+  width: 100%;
 }
 .projections ul li{
   font-size: 14px;
+  width: 50%;
+  float: left;
 }

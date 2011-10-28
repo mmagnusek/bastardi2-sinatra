@@ -6,13 +6,11 @@ ActiveRecord::Base.establish_connection(
 )
 
 class Projection < ActiveRecord::Base
-  scope :today,     lambda { { :conditions => ['date == ?', Date.today] } }
-  scope :tomorrow,  lambda { { :conditions => ['date == ?', Date.today + 1.day] } }
+  scope :today,     lambda { { :conditions => ['date = ?', Date.today] } }
+  scope :tomorrow,  lambda { { :conditions => ['date = ?', Date.today + 1.day] } }
 end
 
 get '/promitani.html' do
-  @today_projections    = Projection.today
-  @tomorrow_projections = Projection.tomorrow
   @cinemas = Projection.find(:all, :conditions => ["date >= :today", { :today => Date.today}]).map do |projection|
     projection.location
   end.sort.uniq

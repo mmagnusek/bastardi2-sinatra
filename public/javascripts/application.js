@@ -45,7 +45,7 @@ $(document).ready(function() {
   $("#spoty_link").attr('href',"#spoty");
   $("#aktuality_link").attr('href',"#aktuality");
   $("#eshop_link").attr('href',"#eshop");
-  $("#soutez_link").attr('href',"#soutez");
+  $("#promitani_link").attr('href',"#promitani");
   
   $(".flash").fadeOut(3000);
 });
