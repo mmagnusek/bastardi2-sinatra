@@ -434,6 +434,25 @@ namespace :db do
     create_projection('1/29/2012',"Vejprty")
   end
   
+  task(:seed3 => :load_config) do
+    create_projection('11/30/2011',"Cinema City Zličín;Cinema City Plzeň Plaza;CineStar Plzeň;CineStar České Budějovice;CineStar Ostrava;CineStar Mladá Boleslav")
+    create_projection('12/3/2011',"Jablonec")
+    create_projection('12/4/2011',"Veselí n. Moravou;Sázava")
+    create_projection('12/6/2011',"K.Vary;Tišnov")
+    create_projection('12/10/2011',"Dobruška")
+    create_projection('12/11/2011',"K.Hora")
+    create_projection('12/15/2011',"Opava")
+    create_projection('12/16/2011',"K.Hora")
+    create_projection('12/19/2011',"Kopřivnice;Nový Jičín")
+    create_projection('12/20/2011',"Nový Jičín")
+    create_projection('12/21/2011',"Jirkov;Nový Jičín;Bruntál")
+    create_projection('12/22/2011',"Bruntál")
+    create_projection('12/23/2011',"Bruntál")
+    create_projection('12/27/2011',"K.Vary")
+    create_projection('12/28/2011',"K.Vary;Červený Kostelec")
+    create_projection('1/4/2012',"Chodov")
+  end
+  
   def create_projection(date,location)
     date = Date.strptime(date, '%m/%d/%Y')
     location.split(';').each do |city|
